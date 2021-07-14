@@ -1,36 +1,26 @@
 ---
 layout: post
 title: Force Idle When a CPU Is Overheating
-description: Some intensive tasks can necesitate the Linux kernel to cope with
-  high temperatures. On embedded systems, passive cooling is mandatory to
-  provide a way to cool down the CPUs if the Dynamic Voltage Frequency Scaling
-  (DVFS) is not available. In this article we focus on a new technique to cool
-  down the CPUs.
-date: 2020-09-18T11:22:11.000Z
+description: Some intensive tasks can necesitate the Linux kernel to cope with high
+  temperatures. On embedded systems, passive cooling is mandatory to provide a way
+  to cool down the CPUs if the Dynamic Voltage Frequency Scaling (DVFS) is not available.
+  In this article we focus on a new technique to cool down the CPUs.
+date: 2020-09-18 11:22:11+00:00
 image: /assets/images/content/chip_background_under_2mb.jpg
 tags:
-  - Idle injection
-  - suspend-to-idle
-  - Idle routines
-  - Linaro
-  - Arm
-  - CPU
-  - Linux kernel
-  - dynamic voltage frequency scaling
-  - DVFS
-  - embedded
-  - DVFS cooling
-  - Operating Performance Point
-  - OPP
-  - PELT
-  - ARM64
+- Linaro
+- Arm
+- CPU
+- Linux Kernel
+- Embedded
+- PELT
 related_projects:
-  - PERF
-category: Blog
+- PERF
+category: blog
 author: daniel.lezcano
 ---
 
-# About the Kernel Working Group
+## About the Kernel Working Group
 
 The Kernel Working Group’s (KWG) primary focus is to be an active contributor to the upstream community and facilitate acceptance of our code into the Linux mainline kernel. Our goal is kernel consolidation - a single source tree with integrated support for multiple Arm SoCs and Arm-based platforms.
 

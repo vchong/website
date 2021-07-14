@@ -1,11 +1,15 @@
 ---
 title: Builds & Downloads
 description: Linaro maintains various development repositories and makes regular
-  releases of many builds including Android, LAVA Test Framework, Key Toolchains
-  and builds for specific member products. This page provides links to many of
-  the more popular downloads produced by Linaro’s engineering teams.
+  releases of builds such as Android, LAVA Test Framework and GNU and LLVM
+  toolchains. This page provides links to many of the more popular downloads
+  produced by Linaro’s engineering teams.
 permalink: /downloads/
 keywords:
+  - GNU
+  - LLVM
+  - Windows on Arm
+  - GCC
   - Cortex-A GCC 8.3-2019.03
   - Arm
   - Ledge
@@ -113,56 +117,31 @@ flow:
                 on both snapshots.linaro.org and releases.linaro.org.
               title: LCR
 ---
-## Linaro Developer Cloud
+Linaro code exists in many states and is found in many places. Working upstream means that the ultimate goal for most code is to be accepted and incorporated into something like the Linux kernel or GCC (the GNU Compiler) toolchain. The [Patches website](https://patches.linaro.org/) presents this work by team and by upstream project.
 
-**Deploy to Arm-based clouds in minutes and build your project today**
+This page provides links to many of the more popular downloads produced by Linaro's engineering teams. 
 
-Linaro Developer Cloud is a heterogeneous cluster managed by Linaro to provide developers with access to the latest Arm enterprise class cloud instances. The cluster is managed with the Openstack-Powered Rocky release with deployment by Kolla-ansible. It runs all your favorite distributions such as Debian, CentOS, Ubuntu and RHEL. The Linaro Developer Cloud is available for development, test, CI and cloud deployments for VM and containers.
 
-To sign up for access and build your project today, click [here](https://servicedesk.linaro.org/servicedesk/customer/portal/19/create/265).
 
-## Linaro Toolchain
+# Linaro GNU and LLVM Toolchains
 
-The latest Arm release of the pre-built GNU cross-toolchain for Cortex-A GCC 8.3-2019.03 is now available on the [Arm Developer website](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-a).
+The official Arm releases of the pre-built GNU cross-toolchain for AArch64 and ARM 32-bit A-Profile cores are now available on the [Arm Developer website](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-a/downloads).
 
-Linaro provides monthly [GCC source archive](https://snapshots.linaro.org/components/toolchain/gcc-linaro/) snapshots of the current Linaro GCC release branch, as well as quarterly releases of pre-built Linaro [GNU cross-toolchain binary archives](https://releases.linaro.org/components/toolchain/binaries/).
+The official community releases of the pre-built LLVM native toolchain for AArch64 and ARM 32-bit A-Profile cores are built and tested by Linaro and are available on [LLVM’s GitHub](https://github.com/llvm/llvm-project/releases/).
 
-The following tables provide direct access to the most common Linux and bare-metal ABI variants of the Linaro binary cross-toolchain quarterly releases.  Both x86_64 Linux and Mingw32 (MS Windows compatible) host binaries are provided:
+In addition to the usual Linux-hosted LLVM (low level virtual machine) toolchain, Linaro also provides [official LLVM Toolchain for Windows on Arm](https://github.com/llvm/llvm-project/releases/download/llvmorg-12.0.0/LLVM-12.0.0-woa64.exe) starting with LLVM 12.0.0 release.
 
-#### Latest Linux Targeted Binary Toolchain Releases
-
-{:.table.responsive-table}
-|--- |--- |--- |--- |--- |
-|**arm-linux-gnueabihf**|*32-bit Armv7 Cortex-A, hard-float, little-endian*|[Release-Notes](https://releases.linaro.org/components/toolchain/binaries/latest-7/)|[Binaries](https://releases.linaro.org/components/toolchain/binaries/latest-7/arm-linux-gnueabihf/)|[Source](https://releases.linaro.org/components/toolchain/gcc-linaro/latest-7/)|
-|**armv8l-linux-gnueabihf**|*32-bit Armv8 Cortex-A, hard-float, little-endian*|[Release-Notes](https://releases.linaro.org/components/toolchain/binaries/latest-7/)|[Binaries](https://releases.linaro.org/components/toolchain/binaries/latest-7/armv8l-linux-gnueabihf/)|[Source](https://releases.linaro.org/components/toolchain/gcc-linaro/latest-7/)|
-|**aarch64-linux-gnu**|*64-bit Armv8 Cortex-A, little-endian*|[Release-Notes](https://releases.linaro.org/components/toolchain/binaries/latest-7/)|[Binaries](https://releases.linaro.org/components/toolchain/binaries/latest-7/aarch64-linux-gnu/)|[Source](https://releases.linaro.org/components/toolchain/gcc-linaro/latest-7/)|
-
-#### Latest Bare-Metal Targeted Binary Toolchain Releases
-
-{:.table.responsive-table}
-|:---|:---|:---|:---|:---|
-|**arm-eabi**|*32-bit Armv7 Cortex-A, soft-float, little-endian*|[Release-Notes](https://releases.linaro.org/components/toolchain/binaries/latest-7/)|[Binaries](https://releases.linaro.org/components/toolchain/binaries/latest-7/arm-eabi/)|[Source](https://releases.linaro.org/components/toolchain/gcc-linaro/latest-7/)|
-|**aarch64-elf**|*64-bit Armv8 Cortex-A, little-endian*|[Release-Notes](https://releases.linaro.org/components/toolchain/binaries/latest-7/)|[Binaries](https://releases.linaro.org/components/toolchain/binaries/latest-7/aarch64-elf/)|[Source](https://releases.linaro.org/components/toolchain/gcc-linaro/latest-7/)|
+Every month, Linaro releases [GNU Toolchain Integration Builds](https://snapshots.linaro.org/gnu-toolchain/) which offer users a snapshot of the upstream build. These builds allow developers to test features from a pre-built binary as soon as it is upstream. 
 
 - - -
 
-Interested in other target ABIs such as big-endian or soft-float little-endian? All toolchain target ABI and host variants can be seen [here](https://releases.linaro.org/components/toolchain/binaries/latest-7/). *Note: Not all ABI and host variants are supported to the same degree. See the [release-notes](https://releases.linaro.org/components/toolchain/binaries/latest-7/) for more information.*
+Interested in Cortex-R and Cortex-M bare-metal targeted toolchains for Arm embedded processors? We’re working with Arm to supply a new release every year (with quarterly updates). Releases are maintained for two years. You can access these directly from [the Arm website](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm).
 
 - - -
 
-Interested in Cortex-R and Cortex-M bare-metal targeted toolchains for Arm embedded processors? We’re working with Arm to also supply a new release every year (with quarterly updates). Releases are maintained for two years. Get these [directly from the Arm website](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm)
+# [](/engineering/)Linaro Member Builds
 
-- - -
-
-Linaro code exists in many states and is found in many places. Working upstream means that the ultimate goal for most code is to be accepted and incorporated into something like the Linux kernel or GCC tool chain. The [Patches website](https://patches.linaro.org/) presents this work by team and by upstream project.
-
-Before the code gets accepted upstream, Linaro maintains various development repositories and Linaro's groups make regular releases of various builds including Android, the LAVA test framework, key toolchains and builds for specific member products.
-
-This page provides links to many of the more popular downloads produced by Linaro's [engineering teams](/engineering/).
-
-## Linaro Member Builds
-
-LMBs are full system builds of popular open-source products set up at the request of a Linaro Core/Club [Member](/membership/) company.
+Linaro Member Builds are full system builds of popular open-source products set up at the request of a Linaro Core or Club [Member](/membership/) company.
 
 {:.table.responsive-table}
 |:---|:---|:---|:---|:---|
@@ -171,15 +150,38 @@ LMBs are full system builds of popular open-source products set up at the reques
 
 - - -
 
-## LEDGE downloads: -
+# LEDGE downloads:
 
-File description:
+The LEDGE Reference Platform (RP) is a lightweight highly secure and robust container runtime environment that has dependable boot and update capabilities. It comes with a full set of security policies with SELinux, IMA (Linux Kernel Integrity Measurement Architecture) and other technologies and builds on SystemReady-IR and EBBR specifications. 
+
+The complete Ledge Reference Platform v0.2 Release can be accessed here: 
+
+[LEDGE RP 0.2 ledge-multi-armv7](http://snapshots.linaro.org/components/ledge/oe/ledge-rp-0.2/ledge-multi-armv7/17/)
+
+[LEDGE RP 0.2 ledge-multi-armv8](http://snapshots.linaro.org/components/ledge/oe/ledge-rp-0.2/ledge-multi-armv8/17/)
+
+[LEDGE RP 0.2 ledge-qemux86-64](http://snapshots.linaro.org/components/ledge/oe/ledge-rp-0.2/ledge-qemux86-64/17/)
+
+[LEDGE RP 0.2 ledge-synquacer](http://snapshots.linaro.org/components/ledge/oe/ledge-rp-0.2/ledge-synquacer/17/)
+
+[LEDGE RP 0.2 ledge-ti-am572x](http://snapshots.linaro.org/components/ledge/oe/ledge-rp-0.2/ledge-ti-am572x/17/)
+
+Additional information relating to the LEDGE Reference Platform can be found here:
 
 * firmware.uefi.uboot.bin: U-Boot based firmware with TF-A and OP-TEE support
 * firmware.uefi-edk2.bin: EDK2 based firmware
 * ledge-iot-ledge-xxxxxxx-0.1.rootfs.wic.gz: Zipped imaged of IoT reference platform
 * ledge-gateway-ledge-xxxxxxx-0.1.rootfs.wic.gz: zipped image of the gateway reference platform
 * ledge-kernel-uefi-certs.ext4.img: Signatures used on EFI secureboot
+* ledge-dev-howto.pdf - Developer Howto Documentation
+* ledge-user-guide.pdf - User Guide Documentation
 
-For [full documentation](https://linaro.github.io/ledge-doc/index.html#document-chapter6-prebuilt-images)\
-To [download the files](http://releases.linaro.org/components/ledge/rp-0.1/)
+- - -
+
+# Linaro Developer Cloud
+
+**Deploy to Arm-based clouds in minutes and build your project today**
+
+Linaro Developer Cloud is a heterogeneous cluster managed by Linaro to provide developers with access to the latest Arm enterprise class cloud instances. The cluster is managed with the Openstack-Powered Rocky release with deployment by Kolla-ansible. It runs all your favorite distributions such as Debian, CentOS, Ubuntu and RHEL. The Linaro Developer Cloud is available for development, test, CI and cloud deployments for VM and containers.
+
+To sign up for access and build your project today, click [here](https://servicedesk.linaro.org/servicedesk/customer/portal/19/create/265).

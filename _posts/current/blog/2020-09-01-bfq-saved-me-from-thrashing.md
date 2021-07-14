@@ -1,28 +1,22 @@
 ---
 layout: post
 title: BFQ saved me from thrashing
-description: In this article Linus Walleij looks at what causes thrashing and
-  developments that help to mitigate this problem.
+description: In this article Linus Walleij looks at what causes thrashing and developments
+  that help to mitigate this problem.
 date: 2020-09-02 10:13:04
 image: /assets/images/content/technology-3389917_1920-1-.jpg
 tags:
-  - Linaro
-  - Linus Walleij
-  - Linux
-  - BFQ
-  - Budget Fair Queue
-  - OOM
-  - out of memory
-  - thrashing
-  - Fedora
-  - ""
+- Linaro
+- Linux
+- OOM
+- Thrashing
 related_projects:
-  - LSE
-category: Blog
+- LSE
+category: blog
 author: linus.walleij
 ---
 
-# Benefits of the BFQ I/O scheduler
+## Benefits of the BFQ I/O scheduler
 
 Recently my less-used desktop computer became sluggish, and would randomly crash. It seemed to be fully occupied with disk activity and quickly became uninteractive to the point that not even ssh login would work. This is easily identified as [thrashing](<https://en.wikipedia.org/wiki/Thrashing_(computer_science)>): constantly swapping to disk because of short core memory.
 

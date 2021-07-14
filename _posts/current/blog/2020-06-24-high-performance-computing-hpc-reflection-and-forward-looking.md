@@ -1,36 +1,32 @@
 ---
 layout: post
-title: " High Performance Computing (HPC), Reflection and Forward-looking."
-description: In 2018 we discussed the first step for ARM into High Performance
-  Computing (HPC). Since then, Linaro has been working to increase awareness of
-  the successes within the High Performance Computing ARM ecosystem. HPC now
-  forms a key part of our activities, plus an association with Fugaku - the No.1
-  Supercomputer in the world (according to the Top500 bi-annual review).
-date: 2020-06-26T04:22:14.000Z
+title: ' High Performance Computing (HPC), Reflection and Forward-looking.'
+description: In 2018 we discussed the first step for ARM into High Performance Computing
+  (HPC). Since then, Linaro has been working to increase awareness of the successes
+  within the High Performance Computing ARM ecosystem. HPC now forms a key part of
+  our activities, plus an association with Fugaku - the No.1 Supercomputer in the
+  world (according to the Top500 bi-annual review).
+date: 2020-06-26 04:22:14+00:00
 image: /assets/images/content/hpc-bg.jpg
 tags:
-  - Arm high performance computing
-  - TOFU
-  - opensource toolchains
-  - high performance computing
-  - Cloud-Native computing
-  - HPC
-  - Arm
-  - Linaro
-  - Fugaku
-  - supercomputers
-  - supercomputing
-  - Linaro developer cloud
-  - Sandia
-  - Fujitsu
-  - open HPC
+- HPC
+- TOFU
+- Opensource Toolchains
+- High Performance Computing
+- Arm
+- Linaro
+- Fugaku
+- Supercomputers
+- Supercomputing
+- Linaro Developer Cloud
+- Open Hpc
 related_projects:
-  - HPCAI
-category: Blog
+- HPCAI
+category: blog
 author: paul.isaacs
 ---
 
-We have previously reflected on the first step for ARM into HPC ([High Performance Computing and Linaro - Mar.2018](/blog/high-performance-computing-and-linaro/)). Since then, Linaro has been working to increase awareness of the successes within the [High Performance Computing ARM ecosystem](https://static.linaro.org/assets/HighPerformanceComputingARMecosystem-small.pdf). High Performance Computing now forms a key part of our Linaro Connect activities ([Connect Resources](/engineering/high-performance-computing/)) and more recently our virtual conferences, due to Covid-19, ([Linaro Tech Days](https://connect.linaro.org/resources/ltd20/ltd20-106/)) for 2020.
+We have previously reflected on the first step for ARM into HPC. Since then, Linaro has been working to increase awareness of the successes within the [High Performance Computing ARM ecosystem](https://static.linaro.org/assets/HighPerformanceComputingARMecosystem-small.pdf). High Performance Computing now forms a key part of our Linaro Connect activities ([Connect Resources](/engineering/high-performance-computing/)) and more recently our virtual conferences, due to Covid-19, ([Linaro Tech Days](https://connect.linaro.org/resources/ltd20/ltd20-106/)) for 2020.
 
 At Supercomputing 2019 we saw the public viewing of Fujitsu’s A64FX ([SC’19](https://www.fujitsu.com/global/solutions/business-technology/tc/events/sc19/)) and some of the first sales outside of Japan, in 2020, including another one of Linaro’s members, Sandia National Labs ([FX700](https://share-ng.sandia.gov/news/resources/news_releases/green_processor/)). Sandia, is the notable home of [Astra, the first Arm supercomputer](https://en.wikichip.org/wiki/supercomputers/astra) to join the Top500 list in 2018 and exceed 1 Petaflops (2.332 Petaflops using over 5000 [Marvell ThunderX2](https://www.marvell.com/products/server-processors/thunderx2-arm-processors.html) processors). Marvell continues to be another highly valued member of Linaro.
 
@@ -104,7 +100,7 @@ Off loading with a CPU+GPU model can be expensive. Small matrices (<1024x1024) h
 
 **Infrastructure**
 
-The method of interconnection used to link compute nodes can have a significant impact on the performance of the system as a whole. What will be interesting to see is how different the [Fugaku Supercomputer](/blog/arm-hpc-workshop-sessions-and-speakers/) styled on Fujitsu’s FX1000 with its TOFU interconnect [compares](https://www.fujitsu.com/global/products/computing/servers/supercomputer/specifications/) to the PCIe/InfiniBand enabled Fujitsu FX700 for real workloads. Keep watching and Linaro’s HPC-SIG could create future blogs on performance tuning vector-enabled CPUs.
+The method of interconnection used to link compute nodes can have a significant impact on the performance of the system as a whole. What will be interesting to see is how different the Fugaku Supercomputer styled on Fujitsu’s FX1000 with its TOFU interconnect [compares](https://www.fujitsu.com/global/products/computing/servers/supercomputer/specifications/) to the PCIe/InfiniBand enabled Fujitsu FX700 for real workloads. Keep watching and Linaro’s HPC-SIG could create future blogs on performance tuning vector-enabled CPUs.
 
 High performance computing demands significant investment in skills and budget. If you’re [budget constrained](https://store.avantek.co.uk/arm-servers.html) then it’s still possible to scale up node by node and perhaps forego [commercial licenses](https://developer.arm.com/solutions/hpc/hpc-software) for comparable opensource [toolchains](/engineering/core/toolchain/) and toolkits such as [OpenHPC](https://openhpc.community/).
 

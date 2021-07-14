@@ -1,26 +1,22 @@
 ---
 layout: post
 title: Open On-Chip Debugger (OpenOCD) at Linaro
-description: Linaro has been actively involved in the OpenOCD project since
-  2016. In this article Omair Javaid takes a closer look at the software
-  development tool.
+description: Linaro has been actively involved in the OpenOCD project since 2016.
+  In this article Omair Javaid takes a closer look at the software development tool.
 date: 2020-09-30 12:34:17
 image: /assets/images/content/electricity-1288717_1920-1-.jpg
 tags:
-  - Linaro
-  - Open on chip Debugger
-  - OpenOCD
-  - Arm v8 AArch64
-  - toolchain
-  - Arm
+- Linaro
+- Toolchain
+- Arm
 related_projects:
-  - GNU
-  - LLVM
-category: Blog
+- GNU
+- LLVM
+category: blog
 author: Omair.Javaid@linaro.org
 ---
 
-# Open on Chip Debugger
+## Open on Chip Debugger
 
 The [Open On-Chip Debugger (OpenOCD)](http://www.openocd.org/) is an open source software development tool which allows on-chip debugging and programming of applications via JTAG/SWD hardware interface. OpenOCD runs on a host computer along with a debugger like GDB. GDB communicates with OpenOCD over RSP protocol similar to debugging an application running on hardware.
 
